@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.dradinc.kotlinxml_mad_cinemaclub.helpers.SharedPreferencesHelper
 
 class OnBoarding : AppCompatActivity() {
     // Переменные для взаимодействия с объектами экрана
@@ -16,10 +17,15 @@ class OnBoarding : AppCompatActivity() {
 
     // Переменная очереди
     private val onBoardingDeque: ArrayDeque<Map<String, Int>> = ArrayDeque()
+    // Переменная для работы с памятью
+    private lateinit var appSharedPreferencesHelper: SharedPreferencesHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_on_boarding)
+
+        // Объявляем хелпер
+        appSharedPreferencesHelper = SharedPreferencesHelper(this)
 
         // Назначаем нашим переменным объекты с макета
         onBoardingImg = findViewById(R.id.onboardingStepImg)
@@ -72,6 +78,11 @@ class OnBoarding : AppCompatActivity() {
             onBoardingImg.setImageResource(stepContent["image"]!!)
             onBoardingTitle.text = getString(stepContent["title"]!!)
             onBoardingDescription.text = getString(stepContent["description"]!!)
+        }
+        else {
+            // Если очередб пустая, то по нажатию на кнопку мы сохраняем статус onBoarding и закрываем его
+            appSharedPreferencesHelper.saveData("is_OnBoarding", true)
+            finish()
         }
         // Если очередь путсая (то есть последний шаг)
         if (onBoardingDeque.isEmpty()) {
