@@ -48,6 +48,15 @@ class OnBoarding : AppCompatActivity() {
 
         // Назначаем кнопкам кликабельность
         findViewById<LinearLayout>(R.id.nextBtn).setOnClickListener {
+            // Вызываем обновление экрана
+            updateOnboarding()
+        }
+
+        findViewById<LinearLayout>(R.id.skipBtn).setOnClickListener {
+            // Удаляем все элементы очереди, кроме последнего
+            while (onBoardingDeque.size > 1) onBoardingDeque.removeFirst()
+
+            // Вызываем обновление экрана
             updateOnboarding()
         }
     }
@@ -63,6 +72,10 @@ class OnBoarding : AppCompatActivity() {
             onBoardingImg.setImageResource(stepContent["image"]!!)
             onBoardingTitle.text = getString(stepContent["title"]!!)
             onBoardingDescription.text = getString(stepContent["description"]!!)
+        }
+        // Если очередь путсая (то есть последний шаг)
+        if (onBoardingDeque.isEmpty()) {
+            findViewById<TextView>(R.id.next_btn_text).text = getString(R.string.start_btn_text)
         }
     }
 }

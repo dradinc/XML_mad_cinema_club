@@ -9,14 +9,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Переменная для работы с сохранением данных
-        val saveAppPref = getSharedPreferences("APP_PREF", MODE_PRIVATE)
-        // Проверяем значение отображения OnBoarding
-        if (!saveAppPref.getBoolean("is_onBoarding", false)) {
-            // Если знаечние false, то показываем onBoarding
-            val onBoardingActivity = Intent(this@MainActivity, OnBoarding::class.java)
-            startActivity(onBoardingActivity)
-        }
+        // Вызываем OnBoarding при запуске приложения
+        val onBoardingActivity = Intent(this@MainActivity, OnBoarding::class.java)
+        startActivity(onBoardingActivity)
 
     }
 }

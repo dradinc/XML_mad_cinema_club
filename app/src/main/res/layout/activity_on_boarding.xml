@@ -124,6 +124,8 @@
             android:background="@drawable/btn_fill_blue">
 
             <TextView
+                android:id="@+id/next_btn_text"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
