@@ -1,5 +1,6 @@
 package com.dradinc.kotlinxml_mad_cinemaclub
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         // Проверяем значение отображения OnBoarding
         if (!saveAppPref.getBoolean("is_onBoarding", false)) {
             // Если знаечние false, то показываем onBoarding
+            val onBoardingActivity = Intent(this@MainActivity, OnBoarding::class.java)
+            startActivity(onBoardingActivity)
         }
 
     }

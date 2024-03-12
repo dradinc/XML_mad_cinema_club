@@ -4,4 +4,12 @@
     <string name="onboarding_step_img">OnBoarding step IMG</string>
     <string name="skip_btn_text">Пропустить</string>
     <string name="next_btn_text">Далее</string>
+
+    <!-- OnBoarding string -->
+    <string name="onboarding_title_1">Добро пожаловать\nв Клуб Синема!</string>
+    <string name="onboarding_description_1"/>
+    <string name="onboarding_title_2">Смотри премьеры и\nклассику в кино</string>
+    <string name="onboarding_description_2">Узнавай первый о премьерах новых фильмах и пересматривай любимые фильмы в кинозале</string>
+    <string name="onboarding_title_3">Все билеты в одном месте</string>
+    <string name="onboarding_description_3">Покупай и используй билеты в любимых кинотеатрах в одном приложении</string>
 </resources>
