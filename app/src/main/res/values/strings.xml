@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinXML_MAD_CinemaClub</string>
+    <string name="onboarding_bg">OnBoarding BG</string>
+    <string name="onboarding_step_img">OnBoarding step IMG</string>
+    <string name="skip_btn_text">Пропустить</string>
+    <string name="next_btn_text">Далее</string>
+</resources>

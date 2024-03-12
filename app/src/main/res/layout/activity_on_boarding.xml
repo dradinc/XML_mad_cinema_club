@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding">
+
+    <!-- BG Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/onboarding_bg"
+        android:scaleType="centerCrop"
+
+        android:contentDescription="@string/onboarding_bg"/>
+
+    <!-- START | OnBoarding Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/onboardingStepImg"
+
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:contentDescription="@string/onboarding_step_img"/>
+
+        <!-- Space -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/onboardingStepTitle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Space -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/onboardingStepDescription"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <!-- END | OnBoarding Content -->
+
+    <!-- START | Buttons container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp">
+
+        <!-- Skip button -->
+        <LinearLayout
+            android:id="@+id/skipBtn"
+
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+
+            android:gravity="center"
+
+            android:background="@drawable/btn_outline">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/skip_btn_text"
+
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+        <!-- Space -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!-- Next button -->
+        <LinearLayout
+            android:id="@+id/nextBtn"
+
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+
+            android:gravity="center"
+
+            android:background="@drawable/btn_fill_blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/next_btn_text"
+
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    <!-- END | Buttons container -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
