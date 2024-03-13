@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_menu_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.dradinc.kotlinxml_mad_cinemaclub.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" />
+    <fragment
+        android:id="@+id/ticketsFragment"
+        android:name="com.dradinc.kotlinxml_mad_cinemaclub.TicketsPageFragment"
+        android:label="fragment_tickets_page"
+        tools:layout="@layout/fragment_tickets_page" />
+    <fragment
+        android:id="@+id/cinemaFragment"
+        android:name="com.dradinc.kotlinxml_mad_cinemaclub.CinemaPageFragment"
+        android:label="fragment_cinema_page"
+        tools:layout="@layout/fragment_cinema_page" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.dradinc.kotlinxml_mad_cinemaclub.ProfilePageFragment"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" />
+</navigation>

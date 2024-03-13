@@ -8,7 +8,7 @@
 
     <!-- OnBoarding string -->
     <string name="onboarding_title_1">Добро пожаловать\nв Клуб Синема!</string>
-    <string name="onboarding_description_1"/>
+    <string name="onboarding_description_1" />
     <string name="onboarding_title_2">Смотри премьеры и\nклассику в кино</string>
     <string name="onboarding_description_2">Узнавай первый о премьерах новых фильмах и пересматривай любимые фильмы в кинозале</string>
     <string name="onboarding_title_3">Все билеты в одном месте</string>
@@ -17,4 +17,6 @@
     <string name="cinema_menu_title">Кинотеатры</string>
     <string name="tickets_menu_title">Билеты</string>
     <string name="profile_menu_title">Профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
