@@ -5,9 +5,17 @@
 
         <!-- START | Custom Status Bar -->
         <item name="android:statusBarColor">@color/menu_and_header_bg</item>
+        <item name="android:navigationBarColor">@color/menu_and_header_bg</item>
         <!-- END | Custom Status Bar -->
     </style>
 
     <style name="Theme.KotlinXML_MAD_CinemaClub" parent="Base.Theme.KotlinXML_MAD_CinemaClub"/>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/app_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_logo</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.KotlinXML_MAD_CinemaClub</item>
+    </style>
 
 </resources>

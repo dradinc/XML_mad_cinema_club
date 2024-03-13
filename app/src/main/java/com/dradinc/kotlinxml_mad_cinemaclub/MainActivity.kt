@@ -9,12 +9,18 @@ import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.dradinc.kotlinxml_mad_cinemaclub.helpers.SharedPreferencesHelper
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+
+
 class MainActivity : AppCompatActivity() {
 
     // Объявляем переменную для контролера навигации
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        val splashScreen = installSplashScreen()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
