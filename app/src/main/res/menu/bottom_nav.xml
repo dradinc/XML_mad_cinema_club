@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/menu_main"
+        android:title="@string/main_menu_text"/>
+
+    <item
+        android:id="@+id/cinemaFragment"
+        android:icon="@drawable/menu_cinema"
+        android:title="@string/cinema_menu_title"/>
+
+    <item
+        android:id="@+id/ticketsFragment"
+        android:icon="@drawable/menu_tickets"
+        android:title="@string/tickets_menu_title"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/menu_profile"
+        android:title="@string/profile_menu_title"/>
+
+</menu>
