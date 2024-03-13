@@ -3,5 +3,9 @@
     <style name="Base.Theme.KotlinXML_MAD_CinemaClub" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <!-- START | Custom Status Bar -->
+        <item name="android:statusBarColor">@color/menu_and_header_bg</item>
+        <!-- END | Custom Status Bar -->
     </style>
 </resources>

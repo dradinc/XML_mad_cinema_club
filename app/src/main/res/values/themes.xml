@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.KotlinXML_MAD_CinemaClub" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.KotlinXML_MAD_CinemaClub" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- START | Custom Status Bar -->
+        <item name="android:statusBarColor">@color/menu_and_header_bg</item>
+        <!-- END | Custom Status Bar -->
     </style>
 
-    <style name="Theme.KotlinXML_MAD_CinemaClub" parent="Base.Theme.KotlinXML_MAD_CinemaClub" />
+    <style name="Theme.KotlinXML_MAD_CinemaClub" parent="Base.Theme.KotlinXML_MAD_CinemaClub"/>
+
 </resources>
