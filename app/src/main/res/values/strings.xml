@@ -13,10 +13,12 @@
     <string name="onboarding_description_2">Узнавай первый о премьерах новых фильмах и пересматривай любимые фильмы в кинозале</string>
     <string name="onboarding_title_3">Все билеты в одном месте</string>
     <string name="onboarding_description_3">Покупай и используй билеты в любимых кинотеатрах в одном приложении</string>
+
+    <!-- Menu and Fragment Title -->
     <string name="main_menu_text">Главная</string>
     <string name="cinema_menu_title">Кинотеатры</string>
-    <string name="tickets_menu_title">Билеты</string>
+    <string name="tickets_menu_title">Мои Билеты</string>
     <string name="profile_menu_title">Профиль</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
