@@ -24,5 +24,18 @@
         android:id="@+id/profileFragment"
         android:name="com.dradinc.kotlinxml_mad_cinemaclub.ProfilePageFragment"
         android:label="fragment_profile_page"
-        tools:layout="@layout/fragment_profile_page" />
+        tools:layout="@layout/fragment_profile_page" >
+        <action
+            android:id="@+id/action_profileFragment_to_securityFragment"
+            app:destination="@id/securityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.dradinc.kotlinxml_mad_cinemaclub.SecurityFragment"
+        android:label="fragment_security"
+        tools:layout="@layout/fragment_security" >
+        <action
+            android:id="@+id/action_securityFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
 </navigation>

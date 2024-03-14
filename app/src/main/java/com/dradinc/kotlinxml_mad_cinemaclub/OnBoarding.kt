@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.dradinc.kotlinxml_mad_cinemaclub.helpers.SharedPreferencesHelper
 
 class OnBoarding : AppCompatActivity() {
@@ -21,6 +22,9 @@ class OnBoarding : AppCompatActivity() {
     private lateinit var appSharedPreferencesHelper: SharedPreferencesHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        val splashScreen = installSplashScreen()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_on_boarding)
 
